@@ -1,0 +1,274 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,html,
+:root{
+  height: 100vh;
+};
+:root {
+  --tiny-min: 480px;
+  --tiny-max: 639px;
+  --sm-min: 640px;
+  --sm-max: 767px;
+  --md-min: 768px;
+  --md-max: 1023px;
+  --lg-min: 1024px;
+  --lg-max: 1279px;
+  --xl-min: 1280px;
+  --xl-max: 1535px;
+  --2xl-min: 1536px;
+  --2xl-max: 1919px;
+  --3xl-min: 1920px;
+}
+
+@media (min-width: var(--tiny-min)) and (max-width: var(--tiny-max)) {
+  /* Styles for 'tiny' screen size */
+}
+
+@media (min-width: var(--sm-min)) and (max-width: var(--sm-max)) {
+  /* Styles for 'sm' screen size */
+}
+
+@media (min-width: var(--md-min)) and (max-width: var(--md-max)) {
+  /* Styles for 'md' screen size */
+}
+
+@media (min-width: var(--lg-min)) and (max-width: var(--lg-max)) {
+  /* Styles for 'lg' screen size */
+}
+
+@media (min-width: var(--xl-min)) and (max-width: var(--xl-max)) {
+  /* Styles for 'xl' screen size */
+}
+
+@media (min-width: var(--2xl-min)) and (max-width: var(--2xl-max)) {
+  /* Styles for '2xl' screen size */
+}
+
+@media (min-width: var(--3xl-min)) {
+  /* Styles for '3xl' screen size */
+}
+
+.wave1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 22%;
+  transform: translate(-3%, 100%);
+}
+.wave2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 70%;
+  transform: translate(0%, 0%);
+}
+.wave3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 75%;
+  transform: translate(0%, 0%);
+}
+.wave4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 83%;
+  transform: translate(0%, 0%);
+}
+.wave5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 128%;
+  transform: translate(0%, 0%);
+}
+
+.wave10 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 197%;
+  transform: translate(0%, 0%);
+}
+.wave11 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 211%;
+  transform: translate(0%, 0%);
+}
+.wave12 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 218%;
+  transform: translate(0%, 0%);
+}
+.wave13 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 225%;
+  transform: translate(0%, 0%);
+}
+.wave14 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 232%;
+  transform: translate(0%, 0%);
+}
+.wave6 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 127%;
+  transform: translate(0%, 0%);
+}
+.wave7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 150%;
+  transform: translate(0%, 0%);
+}
+.wave8 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 175%;
+  transform: translate(0%, 0%);
+}
+.wave9 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 190%;
+  transform: translate(0%, 0%);
+}
+
+
+.screen-container {
+  position: relative;
+  width: 200px; /* Adjust width as needed */
+  height: 300px; /* Adjust height as needed */
+  overflow: hidden;
+}
+
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff; /* Change color as needed */
+  border-radius: 10px; /* Adjust border radius as needed */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth effect */
+}
+
+.wavy-lines {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+}
+
+.wavy-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20px; /* Adjust height of waves */
+  background-image: linear-gradient(to right, transparent 50%, #fff 50%, transparent 50%);
+  background-size: 30px 100%; /* Adjust wave frequency */
+}
+
+.wavy-line:nth-child(odd) {
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
