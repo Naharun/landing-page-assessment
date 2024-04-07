@@ -6,6 +6,9 @@ body,html,
 :root{
   height: 100vh;
 };
+
+
+
 :root {
   --tiny-min: 480px;
   --tiny-max: 639px;
@@ -50,147 +53,121 @@ body,html,
   /* Styles for '3xl' screen size */
 }
 
+
+
+
+
+
 .wave1 {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 22%;
+  top: 70%;
   transform: translate(-3%, 100%);
 }
 .wave2 {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 70%;
+  top: 118%;
   transform: translate(0%, 0%);
 }
 .wave3 {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 75%;
+  top: 125%;
   transform: translate(0%, 0%);
 }
 .wave4 {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 83%;
+  top: 132%;
   transform: translate(0%, 0%);
 }
 .wave5 {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 128%;
+  top: 175%;
   transform: translate(0%, 0%);
 }
 
-.wave10 {
+  .wave10 {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 197%;
+  top: 200%;
   transform: translate(0%, 0%);
 }
-.wave11 {
+ .wave11 {
   position: absolute;
   bottom: 0;
   left: 0;
   top: 211%;
   transform: translate(0%, 0%);
 }
+
 .wave12 {
   position: absolute;
   bottom: 0;
   left: 0;
   top: 218%;
   transform: translate(0%, 0%);
-}
+} 
 .wave13 {
   position: absolute;
   bottom: 0;
   left: 0;
   top: 225%;
   transform: translate(0%, 0%);
-}
+} 
 .wave14 {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 232%;
+  top: 230%;
   transform: translate(0%, 0%);
-}
+}  
 .wave6 {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 127%;
+  top: 170%;
   transform: translate(0%, 0%);
 }
 .wave7 {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 150%;
+  top: 180%;
   transform: translate(0%, 0%);
 }
 .wave8 {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 175%;
+  top: 190%;
   transform: translate(0%, 0%);
 }
 .wave9 {
   position: absolute;
   bottom: 0;
   left: 0;
-  top: 190%;
+  top: 200%;
   transform: translate(0%, 0%);
+}  
+ 
+
+.image{
+  background-image: url("https://img.freepik.com/free-photo/medium-shot-woman-fighter-front-view_23-2148322326.jpg?w=740");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
 }
 
-
-.screen-container {
-  position: relative;
-  width: 200px; /* Adjust width as needed */
-  height: 300px; /* Adjust height as needed */
-  overflow: hidden;
-}
-
-.screen {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff; /* Change color as needed */
-  border-radius: 10px; /* Adjust border radius as needed */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth effect */
-}
-
-.wavy-lines {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  height: 100%;
-}
-
-.wavy-line {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20px; /* Adjust height of waves */
-  background-image: linear-gradient(to right, transparent 50%, #fff 50%, transparent 50%);
-  background-size: 30px 100%; /* Adjust wave frequency */
-}
-
-.wavy-line:nth-child(odd) {
-  transform: rotateY(180deg);
-}
 
 
 

@@ -35,7 +35,7 @@ const Navbar = () => {
     ];
 
     return (
-        <div className="flex justify-between items-center w-full h-16 px-4 text-white bg-blue-950 fixed nav">
+        <div className="flex justify-between items-center w-full h-16 px-4 text-white bg-[#1E1C49] fixed nav">
             <div className="bg-white ml-2 lg:ml-24 text-blue-950  mt-4 px-5 pt-2 rounded-md divide-y-4 divide-indigo-950">
                 <h1>ASSESSMENT</h1>
                 <p>Learn it, do it</p>
